@@ -4,7 +4,7 @@
 
 <style>
 	body{
-		background-color: #F0F0F0;
+		background-color: #FFFFFF;
 		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    		font-weight: 300;
    		margin: 0;
@@ -91,7 +91,7 @@
 	font-size: 0.8125em;
 	max-width: 92.3em;
 	margin: 0 auto;
-	padding: 1em 0px;
+	padding: 5em;
 	color: #333;
 	position: relative;
 }
@@ -107,13 +107,44 @@
 
 .logo{
 	font-size: 6.4em;
-	margin-top: 2.2em;
+	margin-top: 1.2em;
 }
 
 .copy-text{
 	font-size: 2.6em;
-	margin-top: 8.2em;
+	margin-top: 6.6em;
 }
+
+.projects,.people{
+	font-size: 1.2em;
+}
+
+.project-sub{
+	background-color: #E8E8E8
+}
+
+.people-sub{
+	background-color: #FFFFFF
+}
+
+
+#goku{
+	width : 22.87em;
+}
+
+.headwrap{
+	background-color: #F0F0F0;
+}
+
+.project-sub>p, .people-sub>p{
+	margin: 1em;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+ }
+
 </style>
 
 
@@ -134,30 +165,79 @@
 
 <body>
 	<div class="container">
+		<div class="headwrap">
 		<div class ="maincontent">
 		  	<div class="section group">
 			  	<div class="col span_1_of_3">
-			  		<p class="logo">Log Zero.</p>
+			  		<p class="logo">Log Zero. <br><br> </p>
 			  	</div>
 
 			  	<div class="span_2_of_3">
-			  		<p class="copy-text">We're a team of passionate technology geeks building simple, meaningful things for the world.</p>
+			  		<p class="copy-text">We're a team of passionate technology geeks building simple, meaningful things for the world. <br><br><a href="mailto:hello@logzero.in"><em>Get in touch</em></a> if you want something built.</p>
 			  	</div>
 		  	</div>
+		  </div>
+		</div>
 
-		  	<div class="section group">
+
+		<div class ="maincontent">
+		  	<div class="section group projects">
 					<div class="col span_1_of_3">
-						OUR WORK
+						<h3>PROJECTS</h3>
 					</div>
-					<div class="col span_1_of_3">
-					1 of 3
+					<div class="col span_1_of_3 project-sub">
+						<!--<img id="goku" src="img/landscape.png">-->
+						<p>Goku</p>
+						<p>Goku provides businesses an intuitive way to communicate, delegate and track employee tasks.</p>
+						<p>Built on top of the world's most robust web application framework, you can count on Goku to deliver everytime.</p>
 					</div>
+					<div class="col span_1_of_3 project-sub">
+						<!--<img id="goku" src="img/Ladjusted.png">-->
+						<p>Gohan</p>
+						<p>Gohan is an iOS framework for building scalable applications. It provides well-documented, modular components that solve the problem of pushing notifications.</p>
+						<p>Gohan is currently under development and will be open sourced when ready.</p>
+					</div>
+			</div>
+		</div>
+
+		<div class="headwrap">
+		<div class ="maincontent">
+		  	<div class="section group people">
 					<div class="col span_1_of_3">
-					1 of 3
+						<h3>PEOPLE</h3>
+					</div>
+					<div class="col span_1_of_3 people-sub">
+						<!--<img id="goku" src="img/landscape.png">-->
+						<p>Light Yagami</p>
+						<p> Light is a bored young genius who is dissatisfied with the Japanese justice system. When he finds the Death Note, he uses it to kill criminals in large numbers.</p>
+						<p> His goal is to create a "pure world" without evil, which he intends to rule over as "the god of the new world".</p>
+					</div>
+					<div class="col span_1_of_3 people-sub">
+						<!--<img id="goku" src="img/Ladjusted.png">-->
+						<p>L Lawliet</p>
+						<p> Known solely as L, is the world's greatest detective. He takes on the task of tracking down and arresting Kira.</p>
+						<p> His disheveled appearance and odd behavior belie his genius. He lives in solitude, and only his manager Watari is able to contact him directly.</p>
 					</div>
 			</div>
 
-	  	</div>
+			<div class="section group people">
+					<div class="col span_1_of_3">
+					</div>
+					<div class="col span_1_of_3 people-sub">
+						<!--<img id="goku" src="img/landscape.png">-->
+						<p>Misa Amane</p>
+						<p> Amane is a popular Japanese idol. She has an extremely cheerful, upbeat manner.</p>
+						<p> As a Death Note owner and the second Kira, she has the Shinigami Eyes, which allow her to view anyone's name and lifespan on sight, unless they possess a Death Note, in which case she can only see their names.</p>
+					</div>
+					<div class="col span_1_of_3 people-sub">
+						<!--<img id="goku" src="img/Ladjusted.png">-->
+						<p>Near</p>
+						<p> Real name Mihael Keehl, grows up in competition with Near to succeed L. After L's death, however, he concedes the position to Near and leaves to hunt Kira through criminal means, eventually joining the American Mafia.</p>
+						<p> He wants to become Number 1 outdoing Near at any cost.</p>
+					</div>
+			</div>
+		</div>
+	</div>
 
 	</div>
 
