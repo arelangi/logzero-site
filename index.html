@@ -1,261 +1,447 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>Log Zero Tech</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<style>
-	body{
-		background-color: #FFFFFF;
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   		font-weight: 300;
-   		margin: 0;
-	}
+    <title>Log Zero Systems and Software</title>
 
-	
-/*  SECTIONS  ============================================================================= */
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
-
-/*  GROUPING  ============================================================================= */
-
-
-.group:before,
-.group:after {
-    content:"";
-    display:table;
-}
-.group:after {
-    clear:both;
-}
-.group {
-    zoom:1; /* For IE 6/7 (trigger hasLayout) */
-}
-
-/*  GRID COLUMN SETUP   ==================================================================== */
-
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-
-.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
-
-
-/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.col { 
-		margin: 1% 0 1% 0%;
-	}
-}
-
-/*  GRID OF THREE   ============================================================================= */
-
-	
-.span_3_of_3 {
-	width: 100%; 
-}
-
-/*
-.span_2_of_3 {
-	width: 66.13%; 
-}
-*/
-
-.span_1_of_3 {
-	width: 32.26%; 
-}
-
-
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.span_3_of_3 {
-		width: 100%; 
-	}
-	.span_2_of_3 {
-		width: 100%; 
-	}
-	.span_1_of_3 {
-		width: 100%;
-	}
-}
-
-.maincontent{
-	clear: both;
-	width: 80%;
-	font-size: 0.8125em;
-	max-width: 92.3em;
-	margin: 0 auto;
-	padding: 5em;
-	color: #333;
-	position: relative;
-}
-
-.container{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-}
-
-.logo{
-	font-size: 6.4em;
-	margin-top: 1.2em;
-}
-
-.copy-text{
-	font-size: 2.6em;
-	margin-top: 6.6em;
-}
-
-.projects,.people{
-	font-size: 1.2em;
-}
-
-.project-sub{
-	background-color: #E8E8E8
-}
-
-.people-sub{
-	background-color: #FFFFFF
-}
-
-
-#goku{
-	width : 22.87em;
-}
-
-.headwrap{
-	background-color: #F0F0F0;
-}
-
-.project-sub>p, .people-sub>p{
-	margin: 1em;
-}
-
-a {
-  color:inherit;
-  text-decoration: none;
-}
-
-a:hover{
-	text-decoration:underline;
-}
-
-.head{
-	position:fixed; top:2%; right:2%; 
-}
-
-</style>
-
-
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	<link href="color/default.css" rel="stylesheet">
 
 </head>
 
-<!-- GHOSTWHITE - #F0F7FF
-	WHITESMOKE - F0F0F0
-	SNOW - FFF8F0
-	SEASHELL - FFF0F0
-	LIGHTCYAN - E0FFFF
-	POWDERBLUE - B0E0E0
-	IVORY - FFFFF0
-	HONEYDEW - F0FFF0
-	AZURE - F0FFFF
-	ALICEBLUE - F0F8FF
- -->
+<body data-spy="scroll">
 
-<body>
-
-
-
-	<div class="container">
-
-
-		<div class="headwrap">
-		<div class="head">
-			<a href="mailto:hello@logzero.in">Say hello!</a>
-		</div>
-		<div class ="maincontent">
-		  	<div class="section group">
-			  	<div class="col span_1_of_3">
-			  		<p class="logo">Log Zero. <br><br> </p>
-			  	</div>
-
-			  	<div class="span_2_of_3">
-			  		<p class="copy-text">We're a team of passionate technology geeks building simple, meaningful things for the world. <br><br><a href="mailto:hello@logzero.in"><em>Get in touch</em></a> if you want something built.</p>
-			  	</div>
-		  	</div>
-		  </div>
-		</div>
-
-
-		<div class ="maincontent">
-		  	<div class="section group projects">
-					<div class="col span_1_of_3">
-						<h3>PROJECTS</h3>
-					</div>
-					<div class="col span_1_of_3 project-sub">
-						<!--<img id="goku" src="img/landscape.png">-->
-						<p>Goku</p>
-						<p>Goku provides businesses an intuitive way to communicate, delegate and track employee tasks.</p>
-						<p>Built on top of the world's most robust web application framework, you can count on Goku to deliver everytime.</p>
-					</div>
-					<div class="col span_1_of_3 project-sub">
-						<!--<img id="goku" src="img/Ladjusted.png">-->
-						<p>Gohan</p>
-						<p>Gohan is an iOS framework for building scalable applications. It provides well-documented, modular components that solve the problem of pushing notifications.</p>
-						<p>Gohan is currently under development and will be open sourced when ready.</p>
-					</div>
-			</div>
-		</div>
-
-		<div class="headwrap">
-		<div class ="maincontent">
-		  	<div class="section group people">
-					<div class="col span_1_of_3">
-						<h3>PEOPLE</h3>
-					</div>
-					<div class="col span_1_of_3 people-sub">
-						<!--<img id="goku" src="img/landscape.png">-->
-						<p>Light Yagami</p>
-						<p> Light is a bored young genius who is dissatisfied with the Japanese justice system. When he finds the Death Note, he uses it to kill criminals in large numbers.</p>
-						<p> His goal is to create a "pure world" without evil, which he intends to rule over as "the god of the new world".</p>
-					</div>
-					<div class="col span_1_of_3 people-sub">
-						<!--<img id="goku" src="img/Ladjusted.png">-->
-						<p>L Lawliet</p>
-						<p> Known solely as L, is the world's greatest detective. He takes on the task of tracking down and arresting Kira.</p>
-						<p> His disheveled appearance and odd behavior belie his genius. He lives in solitude, and only his manager Watari is able to contact him directly.</p>
-					</div>
-			</div>
-
-			<div class="section group people">
-					<div class="col span_1_of_3">
-					</div>
-					<div class="col span_1_of_3 people-sub">
-						<!--<img id="goku" src="img/landscape.png">-->
-						<p>Misa Amane</p>
-						<p> Amane is a popular Japanese idol. She has an extremely cheerful, upbeat manner.</p>
-						<p> As a Death Note owner and the second Kira, she has the Shinigami Eyes, which allow her to view anyone's name and lifespan on sight, unless they possess a Death Note, in which case she can only see their names.</p>
-					</div>
-					<div class="col span_1_of_3 people-sub">
-						<!--<img id="goku" src="img/Ladjusted.png">-->
-						<p>Near</p>
-						<p> Real name Mihael Keehl, grows up in competition with Near to succeed L. After L's death, however, he concedes the position to Near and leaves to hunt Kira through criminal means, eventually joining the American Mafia.</p>
-						<p> He wants to become Number 1 outdoing Near at any cost.</p>
-					</div>
-			</div>
-		</div>
+<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li><a href="#intro" class="gn-icon gn-icon-download">Home</a></li>
+								<li><a href="#service" class="gn-icon gn-icon-cog">Service</a></li>
+								<li><a href="#works" class="gn-icon gn-icon-help">Works</a></li>
+								<li><a href="#contact" class="gn-icon gn-icon-archive">Contact</a></li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<li><a href="index.html">logzero</a></li>
+				<li><ul class="company-social">
+					<!--
+                            <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                            <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+					-->
+                        </ul>	</li>
+			</ul>
 	</div>
 
-	</div>
+	<!-- Section: intro -->
+    <section id="intro" class="intro">
+		<div class="slogan">
+			<h1>We're building great things</h1>
+			<p>let us build amazing stuff for you</p>
+			<a href="#about" class="btn btn-skin scroll">Learn more</a>
+		</div>	
+    </section>
+	<!-- /Section: intro -->
+
+	<!-- Section: about -->
+	<!--
+    <section id="about" class="home-section text-center bg-gray">
+		<div class="heading-about marginbot-50">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+		
+					<div class="section-heading">
+					<h2>About us</h2>
+					<p>Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has</p>
+					</div>
+			
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-3">
+
+                <div class="team boxed-grey">
+                    <div class="inner">
+						<h5>Anna Hanaceck</h5>
+                        <p class="subtitle">Pixel Crafter</p>
+                        <div class="avatar"><img src="img/team/1.jpg" alt="" class="img-responsive" /></div>
+                    </div>
+                </div>
+		
+            </div>
+			<div class="col-xs-6 col-sm-3 col-md-3">
+
+                <div class="team boxed-grey">
+                    <div class="inner">
+						<h5>Maura Daniels</h5>
+                        <p class="subtitle">Ruby on Rails</p>
+                        <div class="avatar"><img src="img/team/2.jpg" alt="" class="img-responsive" /></div>
+                    </div>
+
+				</div>
+            </div>
+			<div class="col-xs-6 col-sm-3 col-md-3">
+		
+                <div class="team boxed-grey">
+                    <div class="inner">
+						<h5>Jack Briane</h5>
+                        <p class="subtitle">jQuery Ninja</p>
+                        <div class="avatar"><img src="img/team/3.jpg" alt="" class="img-responsive" /></div>
+                    </div>
+                </div>
+		
+            </div>
+			<div class="col-xs-6 col-sm-3 col-md-3">
+		
+                <div class="team boxed-grey">
+                    <div class="inner">
+						<h5>Tom Petterson</h5>
+                        <p class="subtitle">Typographer</p>
+                        <div class="avatar"><img src="img/team/4.jpg" alt="" class="img-responsive" /></div>
+                    </div>
+                </div>
+	
+            </div>
+        </div>		
+		</div>
+	</section>
+	-->
+	<!-- /Section: about -->
+	
+	
+	<!-- Section: services -->
+    <section id="service" class="home-section text-center">
+		
+		<div class="heading-about marginbot-50">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+		
+					<div class="section-heading">
+					<h2>Our Services</h2>
+					<p>Logzero is a product development company that builds custom software and hardware. If you have an idea waiting to be built, we'd love to hear it.</p>
+					</div>
+			
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-3">
+			
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-laptop fa-3x"></i>
+					</div>
+					<div class="service-desc">
+						<h5>Web Development</h5>
+						<p>From design to deployment with least hassle? Well, you are at the right place.</p>
+						<!--<p>One page static pages to complex web applications, from design to deployment we have you covered.</p>-->
+					</div>
+                </div>
+	
+            </div>
+			<div class="col-sm-3 col-md-3">
+	
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-mobile-phone fa-3x"></i>
+					</div>
+					<div class="service-desc">
+						<h5>Mobile Development</h5>
+						<p>Kids spending too much time on their phones? Let's make them spend it on your app ;)</p>
+						<!--<p>Our mobile solutions on iOS and Android are sure to reach the customer you covet.</p>-->
+					</div>
+                </div>
+
+            </div>
+			<div class="col-sm-3 col-md-3">
+
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-area-chart fa-3x"></i>
+					</div>
+					<div class="service-desc">
+						<h5>Data Analysis</h5>
+						<p>Have a mountain of data and don't know what it means? Leave it to us.</p>
+						<!--<p>Our data analysis services provide insights that matter to your bottom line.</p>-->
+					</div>
+                </div>
+			
+            </div>
+			<div class="col-sm-3 col-md-3">
+	
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-gears fa-3x"></i>
+					</div>
+					<div class="service-desc">
+						<h5>Robotics</h5>
+						<p>Think transformers shouldn't just be a movie? Let's talk.</p>
+						<!--<p>Robotics for us is a passion. We'd be very interested in providing you solutions that help.</p>-->
+					</div>
+                </div>
+			
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 col-md-3">
+			
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-bar-chart-o fa-3x"></i>
+					</div>
+					<div class="service-desc">
+						<h5>Data Visualization</h5>
+						<p>Visualizing complex concepts, breaking down hard to grasp analytics? That's our forte.</p>
+						<!--<p>Presentation is as important as the content and visualizing complex concepts is our forte.</p>-->
+					</div>
+                </div>
+	
+            </div>
+			<div class="col-sm-3 col-md-3">
+	
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-cube fa-3x"></i>
+					</div>
+					<div class="service-desc">
+						<h5>Hardware Solutions</h5>
+						<p>Did you say Internet of things? Yeah baby!</p>
+					</div>
+                </div>
+
+            </div>
+			<div class="col-sm-3 col-md-3">
+
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-flask fa-3x"></i>
+					</div>
+					<div class="service-desc">
+						<h5>Prototyping</h5>
+						<p>Entrepreneurs, companies that need a simple solution for product validation? Get in touch.</p>
+					</div>
+                </div>
+			
+            </div>
+			<div class="col-sm-3 col-md-3">
+	
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-cloud fa-3x"></i>
+					</div>
+					<div class="service-desc">
+						<h5>API</h5>
+						<p>Building RESTful APIs, providing web services that scale, accessing remote APIs? You bet.</p>
+					</div>
+                </div>
+			
+            </div>
+        </div>			
+		</div>
+	</section>
+	<!-- /Section: services -->
+	
+		
+	<!-- Section: works -->
+    <section id="works" class="home-section text-center bg-gray">
+		<div class="heading-works marginbot-50">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+		
+					<div class="section-heading">
+					<h2>Recent Works</h2>
+					<p>Here's a list of some of our most recent projects.</p>
+					</div>
+		
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12" >
+
+                    <div class="row gallery-item">
+                       
+						<div class="col-md-3">
+							<a href="img/works/myblee.png" title="Myblee app" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/myblee.png" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<!--
+						<div class="col-md-3">
+							<a href="img/works/indhealth.png" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/indhealth.png" class="img-responsive" alt="img">
+							</a>
+						</div> -->
+						
+						<div class="col-md-3">
+							<a href="img/works/bechde.png" title="Bechde app" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/bechde.png" class="img-responsive" alt="img">
+							</a>
+						</div>
+						<div class="col-md-3">
+							<a href="img/works/sendascript.png" title="Send a script app" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/sendascript.png" class="img-responsive" alt="img">
+							</a>
+						</div>
+						 <div class="col-md-3">
+							<a href="img/works/conffinder.png" title="MD Conference Finder" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg">
+								<img src="img/works/conffinder.png" class="img-responsive" alt="img">
+							</a>
+						</div>
+					</div>
+	
+                </div>
+            </div>	
+		</div>
+	</section>
+	<!-- /Section: works -->
+
+	<!-- Section: contact -->
+    <section id="contact" class="home-section text-center">
+		<div class="heading-contact marginbot-50">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+	
+					<div class="section-heading">
+					<h2>Get in touch</h2>
+					<p>We are always looking for projects that are challenging. If you have either a complete plan or an inkling of an idea, we'd be love to hear.</p>
+					</div>
+				
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+
+    <div class="row">
+        <div class="col-lg-8 col-md-offset-2">
+            <div class="boxed-grey">
+                <form id="contact-form" action="http://forms.brace.io/arelangi@gmail.com" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" class="form-control" name="_replyto" id="email" placeholder="Enter email" required="required" /></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                Subject</label>
+                            <select id="subject" name="subject" class="form-control" required="required">
+                                <option value="na" selected="">Choose One:</option>
+                                <option value="service">General Customer Service</option>
+                                <option value="suggestions">Suggestions</option>
+                                <option value="product">Product Support</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Message</label>
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
+                            Send Message</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+			
+			<div class="widget-contact row">
+				 <div class="col-lg-6">
+				<address>
+				  <strong>LogZero Ltd.</strong><br>
+				  Vizag<br>
+				  Andhra Pradesh, India 94107<br>
+				  <abbr title="Phone">P:</abbr> (123) 456-7890
+				</address>
+				</div>
+				
+				<div class="col-lg-6">
+				<address><!--
+				  <strong>Email</strong><br>
+				  <a href="mailto:#">email.name@example.com</a><br />
+				   <a href="mailto:#">name.name@example.com</a>
+					-->
+				</address>	
+			
+				</div>
+			</div>	
+        </div>
+
+    </div>	
+
+		</div>
+	</section>
+	<!-- /Section: contact -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+		
+					<p>Copyright &copy; 2014 LogZero</p>
+				</div>
+			</div>	
+		</div>
+	</footer>
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>	
+	<script src="js/classie.js"></script>
+	<script src="js/gnmenu.js"></script>
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+	<script src="js/stellar.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
 
 </body>
 
