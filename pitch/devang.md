@@ -185,10 +185,10 @@ template: inverse
 
 ???
 
-- We are lacking in information about the scale and details of the product
-- How many users do you anticipate?
-- How many products?
-- What categories etc., So this is about a general 
+- After talking to you and understanding your needs, I understood that you want an ecommerce solution not on the scale of flipkart of amazon but something that performs well.
+
+- I'm gonna present you with a few options for you to choose from, and I will give you our recommendation as to what we think might best suit you. But remember it's just a recommendation and ultimately you are the one that knows most about your business. So make the choice that feels right to you.
+
 
 ---
 .left-column[
