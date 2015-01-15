@@ -261,7 +261,7 @@ template: inverse
 
 - Will build for what you want
 
-- Can build it cost effectuvely
+- Can build it cost effectively
 
 - Will design based on the needs rather than choosing from the existing templates
 
